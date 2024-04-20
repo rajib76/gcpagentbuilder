@@ -1,0 +1,42 @@
+{
+  "name": "35c0be6e-a93d-4dde-bad1-a76680cf17ab",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Please develop a java code to sum two numbers"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Sure, let me request Java developer to develop the code"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/gen-lang-client-0232864429/locations/global/agents/da4ea56c-a95a-472d-85de-3a6ab9f42dd8/playbooks/7e391c6f-a5ce-4346-8d99-812a1a120351",
+      "playbookInput": {
+        "precedingConversationSummary": "Please develop a java code to sum two numbers"
+      },
+      "playbookOutput": {
+        "executionSummary": "import java.util.Scanner;\npublic class SumTwoNumbers {\n    public static void main(String[] args) {\n        // Create a Scanner object to read input from the keyboard\n        Scanner scanner = new Scanner(System.in);\n\n        // Prompt the user to enter the first number\n        System.out.print(\"Enter the first number: \");\n        int firstNumber = scanner.nextInt();\n\n        // Prompt the user to enter the second number\n        System.out.print(\"Enter the second number: \");\n        int secondNumber = scanner.nextInt();\n\n        // Calculate the sum of both numbers\n        int sum = firstNumber + secondNumber;\n\n        // Display the result\n        System.out.println(\"The sum of \" + firstNumber + \" and \" + secondNumber + \" is \" + sum);\n\n        // Close the scanner\n        scanner.close();\n    }\n}\n"
+      },
+      "playbookState": "OUTPUT_STATE_OK"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Is there anything i can help with"
+    }
+  }, {
+    "userUtterance": {
+      "text": "No"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Bye"
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "import java.util.Scanner;\npublic class SumTwoNumbers {\n    public static void main(String[] args) {\n        // Create a Scanner object to read input from the keyboard\n        Scanner scanner = new Scanner(System.in);\n\n        // Prompt the user to enter the first number\n        System.out.print(\"Enter the first number: \");\n        int firstNumber = scanner.nextInt();\n\n        // Prompt the user to enter the second number\n        System.out.print(\"Enter the second number: \");\n        int secondNumber = scanner.nextInt();\n\n        // Calculate the sum of both numbers\n        int sum = firstNumber + secondNumber;\n\n        // Display the result\n        System.out.println(\"The sum of \" + firstNumber + \" and \" + secondNumber + \" is \" + sum);\n\n        // Close the scanner\n        scanner.close();\n    }\n}\n"
+  },
+  "displayName": "java_request",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

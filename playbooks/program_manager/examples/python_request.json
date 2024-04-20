@@ -1,0 +1,42 @@
+{
+  "name": "d3b92965-1901-4c77-b116-78cbef0ffa04",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Please develop a python code to sum two numbers"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Sure, let me request python developer to work on your request"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/gen-lang-client-0232864429/locations/global/agents/da4ea56c-a95a-472d-85de-3a6ab9f42dd8/playbooks/cb01ad41-df49-4ad5-8f3f-c24280ffea91",
+      "playbookInput": {
+        "precedingConversationSummary": "Please develop a python code to sum two numbers"
+      },
+      "playbookOutput": {
+        "executionSummary": "def sum_two_numbers(a, b):\n    return a + b\n\n# Example usage\nnum1 = 5\nnum2 = 3\nresult = sum_two_numbers(num1, num2)\nprint(\"The sum of\", num1, \"and\", num2, \"is\", result)"
+      },
+      "playbookState": "OUTPUT_STATE_OK"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Is there anything else I can help with"
+    }
+  }, {
+    "userUtterance": {
+      "text": "No"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Bye"
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "def sum_two_numbers(a, b):\n    return a + b\n\n# Example usage\nnum1 = 5\nnum2 = 3\nresult = sum_two_numbers(num1, num2)\nprint(\"The sum of\", num1, \"and\", num2, \"is\", result)"
+  },
+  "displayName": "python_request",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}
