@@ -1,0 +1,13 @@
+{
+  "name": "d6cd0c9f-8d9a-4666-a96d-01b625739746",
+  "playbookInput": {
+    "precedingConversationSummary": "Please develop a python program to sum two numbers"
+  },
+  "playbookOutput": {
+    "executionSummary": "def sum_two_numbers(a, b):\n    return a + b\n\n# Example usage\nnum1 = 5\nnum2 = 3\nresult = sum_two_numbers(num1, num2)\nprint(\"The sum of\", num1, \"and\", num2, \"is\", result)"
+  },
+  "displayName": "project_request",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}
