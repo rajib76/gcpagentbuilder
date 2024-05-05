@@ -1,0 +1,61 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "Celebrity Information Retrieval API",
+    "description": "API to retrieve celebrity information based on celebrity name",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://us-central1-gen-lang-client-0232864429.cloudfunctions.net/getcelebrityname"
+    }
+  ],
+  "paths": {
+    "/CelebrityName": {
+      "get": {
+        "summary": "Get information of a celebrity based on celebrity name",
+        "description": "Returns information of the celebrity based on the celebrity name",
+		"operationId": "getCelebrityInfo",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "celebrityName",
+            "description": "The name of the celebrity",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Celebrity Information",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "celebrityName": {
+                      "type": "string",
+                      "description": "The name of the celebrity"
+                    },
+                    "content": {
+                      "type": "string",
+                      "description": "The information of the celebrity"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request - Invalid query parameter or missing required parameter"
+          },
+          "404": {
+            "description": "Celebrity not found"
+          }
+        }
+      }
+    }
+  }
+}
